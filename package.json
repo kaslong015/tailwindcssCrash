@@ -1,0 +1,20 @@
+{
+  "name": "tailwindtuts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "run-build": "npx tailwindcss -i input.css -o ./src/css/output.css --watch",
+    "dev": "live-server ./src"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.4",
+    "postcss": "^8.4.12"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.0.23"
+  }
+}
