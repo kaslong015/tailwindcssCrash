@@ -17,9 +17,9 @@
 				<img src="img/nestjs-logo-09342F76C0-seeklogo.com.png" class="w-16">
 				<ul class="md:flex flex-row gap-8 pr-32 items-center justify-center text-white text-base font-bold">
 					<li><a href="">DOCUMENTATION </a></li>
-					<li><a href="">ENTERPRISE </a></li>
-					<li><a href="">COURSES </a></li>
-					<li><a href="">SUPPORT US </a></li>
+					<li class="hidden md:block"><a href="">ENTERPRISE </a></li>
+					<li class="hidden md:block"><a href="">COURSES </a></li>
+					<li class="hidden md:block"><a href="">SUPPORT US </a></li>
 					<li class="border-2 border-gray-300 px-2 py-2"></li>
 					<li class="border-2 border-gray-300 px-2 py-2"></li>
 					<li class="border-2 border-gray-300 px-2 py-2"></li>
@@ -29,31 +29,114 @@
 		<div class="ml-24 pt-40 pb-16">
 			<h1 class="text-5xl text-white font-bold capitalize pb-3">Hello, nest!</h1>
 			<p class="text-white font-bold text-lg">
-				A progressive Node.js framework for building efficient, reliable <br> and scalable server-side applications.
+				A progressive Node.js framework for building efficient, reliable <br> and scalable server-side
+				applications.
 			</p>
 		</div>
-		<div class="flex gap-8 ml-24 text-white text-lg">
+		<div class="flex gap-8 ml-24 sm:invisible md:visible text-white text-lg">
 			<div
 				class="hover:bg-red-500 transition ease-out duration-500 border-2 border-red-400 py-2 px-10 rounded-full cursor-pointer ">
 				Documentaion</div>
-			<div class="hover:border-red-500 hover:text-red-500 border-2 border-white py-2 px-10 rounded-full cursor-pointer">
+			<div
+				class="hover:border-red-500 hover:text-red-500 border-2 border-white py-2 px-10 rounded-full cursor-pointer">
 				Source code</div>
 		</div>
 	</section>
 	<!--hero section start-->
-	<section class="bg-[#f1f3f3] h-96 ">
-		<div class="md:flex justify-around pt-32">
-			<div class="">
-				<h3 class="border-2 border-red-400 p-8 rounded-full bg-black"></h3>
+	<section class="bg-[#f1f3f3] px-4 ">
+		<div class="grid grid-cols-3 gap-4 place-items-center justify-around ">
+			<div class="place-items-center mb-32">
+				<img class="h-24 pb-11 pl-36 mt-32"
+					src="https://d33wubrfki0l68.cloudfront.net/af047ac54e246e4a16a9874f8f8e8b23b944786a/4f102/3d.87c64f5b.svg">
+				<span class="h-16 pb-11 pl-32 font-extrabold text-xl text-red-500">EXTENSIBLE</span>
+				<p class="px-4 text-center mt-8 tracking-wide text-black">Gives you true flexibility by allowing use of
+					any
+					other libraries thanks
+					to modular
+					architecture.</p>
 			</div>
-			<div>
-				<h3 class="border-2 border-red-400 p-8 rounded-full bg-black"></h3>
+			<div class="place-items-center mb-32">
+				<img class="h-24 pb-11 pl-36 mt-32 "
+					src="https://d33wubrfki0l68.cloudfront.net/6fd3f1586e44b418a4afd53bc81c76f5d970f51a/d33f9/magic-wand.f171d0b3.svg">
+				<span class="h-16 pb-11 pl-32 font-extrabold text-xl text-red-500">VERSATILE</span>
+				<p class="px-4 text-center mt-8 tracking-wide text-black">An adaptable ecosystem that is a fully-fledged
+					backbone for all kinds of
+					server-side applications
+					to modular
+					architecture.</p>
 			</div>
-			<div>
-				<h3 class="border-2 border-red-400 p-8 rounded-full bg-black"></h3>
+			<div class="place-items-center mb-32">
+				<img class="h-24 pb-11 pl-36 mt-32"
+					src="https://d33wubrfki0l68.cloudfront.net/c62c21329677dea388a08c2da8912c6d655b935e/9b1d8/quality.2871f361.svg">
+				<span class="h-16 pb-11 pl-32 font-extrabold text-xl text-red-500">PROGRESSIVE</span>
+				<p class="px-4 text-center mt-8 tracking-wide text-black">Takes advantage of latest JavaScript features,
+					bringing design
+					patterns
+					and mature solutions to Node.js world.</p>
+			</div>
+
+		</div>
+	</section>
+	<!-- cat hero section -->
+	<section class="bg-cover bg-no-repeat bg-fixed bg-top h-screen" style="background-image: url('img/cat.jpg')">
+		<div class="grid grid-cols-3 content-center items-center">
+			<div class="p-4 col-span-1"></div>
+			<div class="px-16 col-span-2 pt-32 text-white">
+				<h4 class="text-white font-extrabold text-left text-4xl mb-11">
+					The open source platform designed for the future. Build enterprise.
+				</h4>
+				<h5 class="text-xl font-extrabold">
+					A complete development kit for building scalable server-side apps. Contact us to find out more about
+					expertise consulting, on-site enterprise support, trainings, and private sessions.
+				</h5>
+				<button type="button"
+					class="px-4 py-4 bg-gradient-to-r mt-8 rounded-full font-extrabold from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 ...">
+					learn more about support offerings
+				</button>
+
 			</div>
 		</div>
 	</section>
-</body>
+	<!-- live preview section -->
+	<section class="bg-black text-white  pt-24 pb-24  ">
+		<h3 class="text-center pb-4 font-extrabold text-4xl ">Live preview</h3>
+		<p class="text-center text-base pb-32">See how your application may potentially look like without leaving
+			<br>your personal browser.
+		</p>
+		<div class="h-[36rem] mx-20 rounded bg-zinc-900 pb-4"></div>
+	</section>
+	<section class="bg-zinc-800 text-white  pt-24 pb-24  ">
+		<h3 class="text-center pb-4 font-extrabold text-4xl ">Conferences</h3>
+		<p class="text-center text-base pb-32">Building a platform: Nest from the ground up <span
+				class="text-[#ed1543]"> Kamil Mysliwiec</span>
+			<br><span class="text-[#ed1543]">JSPoland</span> Warsaw 2018
+		</p>
+		<div class="h-[36rem] mx-20 rounded bg-zinc-900 pb-4"></div>
+	</section>
+	<section>
+		<div class="grid grid-cols-3 px-32 py-16 bg-slate-200">
+			<div class="col-span-2">
+				<h1 class="font-bold text-lg capitalize">Join our Newsletter</h1>
+				<p class="text-[#7b7b7b]">Subscribe to stay up to date with the latest Nest updates, features, and
+					videos!</p>
+			</div>
+			<div class="col-span-1">
+				<input type="text"
+					class="focus:outline-none focus:border-none w-64 px-4 py-3.5 bg-white rounded-tl-md rounded-bl-md text-sm m-0"
+					placeholder="Email address...">
+				<span
+					class="transition ease-out duration-500 hover:bg-black text-white px-4 py-3.5 bg-red-500 rounded-br-md rounded-tr-md m-0">01</span>
+			</div>
+		</div>
+	</section>
+	<section class="bg-slate-300 py-32 text-center font-normal text-[#a5a5a5]">
+		<p>Released under the MIT License</p>
+		<p>Official NestJS Consulting <span class="text-[#ea2845]">Trilon.io</span>
+		</p>
+		<p>Copyright © 2017- 2022 <span class="text-[#ea2845]">Kamil Mysliwiec</span></p>
+		<p>Designed by <span class="text-[#ea2845]">Jakub Staron</span>,hosted by <span
+				class="text-[#ea2845]">Netlify</span></p>
+		<p class="text-[#ea2845]">中文说明</p>
+	</section>
 
 </html>
