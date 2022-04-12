@@ -15,16 +15,26 @@
 		<header class="ml-24 pt-11">
 			<div class="flex justify-between items-center">
 				<img src="img/nestjs-logo-09342F76C0-seeklogo.com.png" class="w-16">
-				<ul class="md:flex flex-row gap-8 pr-32 items-center justify-center text-white text-base font-bold">
+				<ul id="menu"
+					class="hidden md:flex flex-row gap-4 pr-32 items-center justify-center text-white text-base font-bold">
 					<li><a href="">DOCUMENTATION </a></li>
-					<li class="hidden md:block"><a href="">ENTERPRISE </a></li>
-					<li class="hidden md:block"><a href="">COURSES </a></li>
-					<li class="hidden md:block"><a href="">SUPPORT US </a></li>
+					<li class=""><a href="">ENTERPRISE </a></li>
+					<li class=""><a href="">COURSES </a></li>
+					<li class=""><a href="">SUPPORT US </a></li>
 					<li class="border-2 border-gray-300 px-2 py-2"></li>
 					<li class="border-2 border-gray-300 px-2 py-2"></li>
 					<li class="border-2 border-gray-300 px-2 py-2"></li>
 				</ul>
+				<div class="px-4 cursor-pointer md:hidden text-white font-extrabold text-64" id="burger">
+					<svg class="w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+						xmlns="http://www.w3.org/2000/svg">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							d="M4 6h16M4 12h16M4 18h16">
+						</path>
+					</svg>
+				</div>
 			</div>
+
 		</header>
 		<div class="ml-24 pt-40 pb-16">
 			<h1 class="text-5xl text-white font-bold capitalize pb-3">Hello, nest!</h1>
@@ -33,7 +43,7 @@
 				applications.
 			</p>
 		</div>
-		<div class="flex gap-8 ml-24 sm:invisible md:visible text-white text-lg">
+		<div class="hidden md:flex gap-8 ml-24 sm:invisible md:visible text-white text-lg">
 			<div
 				class="hover:bg-red-500 transition ease-out duration-500 border-2 border-red-400 py-2 px-10 rounded-full cursor-pointer ">
 				Documentaion</div>
@@ -44,11 +54,11 @@
 	</section>
 	<!--hero section start-->
 	<section class="bg-[#f1f3f3] px-4 ">
-		<div class="grid grid-cols-3 gap-4 place-items-center justify-around ">
+		<div class="block md:grid grid-cols-3 gap-4 place-items-center justify-around ">
 			<div class="place-items-center mb-32">
-				<img class="h-24 pb-11 pl-36 mt-32"
+				<img class="h-4 md:h-24 pb-11 pl-36 md:mt-32"
 					src="https://d33wubrfki0l68.cloudfront.net/af047ac54e246e4a16a9874f8f8e8b23b944786a/4f102/3d.87c64f5b.svg">
-				<span class="h-16 pb-11 pl-32 font-extrabold text-xl text-red-500">EXTENSIBLE</span>
+				<span class="h-16 md:pb-11 md:pl-32 font-extrabold text-xl text-center text-red-500">EXTENSIBLE</span>
 				<p class="px-4 text-center mt-8 tracking-wide text-black">Gives you true flexibility by allowing use of
 					any
 					other libraries thanks
@@ -56,19 +66,20 @@
 					architecture.</p>
 			</div>
 			<div class="place-items-center mb-32">
-				<img class="h-24 pb-11 pl-36 mt-32 "
+				<img class="h-4 md:h-24 pb-11 pl-36 mt-32 "
 					src="https://d33wubrfki0l68.cloudfront.net/6fd3f1586e44b418a4afd53bc81c76f5d970f51a/d33f9/magic-wand.f171d0b3.svg">
-				<span class="h-16 pb-11 pl-32 font-extrabold text-xl text-red-500">VERSATILE</span>
+				<span class="h-16 md:pb-11 md:pl-32 font-extrabold text-xl text-center text-red-500">VERSATILE</span>
 				<p class="px-4 text-center mt-8 tracking-wide text-black">An adaptable ecosystem that is a fully-fledged
 					backbone for all kinds of
 					server-side applications
 					to modular
 					architecture.</p>
 			</div>
-			<div class="place-items-center mb-32">
-				<img class="h-24 pb-11 pl-36 mt-32"
+			<div class="place-items-center md:mb-32">
+				<img class="h-4 md:h-24 pb-11 pl-36 mt-32"
 					src="https://d33wubrfki0l68.cloudfront.net/c62c21329677dea388a08c2da8912c6d655b935e/9b1d8/quality.2871f361.svg">
-				<span class="h-16 pb-11 pl-32 font-extrabold text-xl text-red-500">PROGRESSIVE</span>
+				<span
+					class="justify-center h-16 md:pb-11 md:pl-32 font-extrabold text-xl text-center text-red-500">PROGRESSIVE</span>
 				<p class="px-4 text-center mt-8 tracking-wide text-black">Takes advantage of latest JavaScript features,
 					bringing design
 					patterns
@@ -79,10 +90,10 @@
 	</section>
 	<!-- cat hero section -->
 	<section class="bg-cover bg-no-repeat bg-fixed bg-top h-screen" style="background-image: url('img/cat.jpg')">
-		<div class="grid grid-cols-3 content-center items-center">
+		<div class="block md:grid grid-cols-3 content-center items-center">
 			<div class="p-4 col-span-1"></div>
-			<div class="px-16 col-span-2 pt-32 text-white">
-				<h4 class="text-white font-extrabold text-left text-4xl mb-11">
+			<div class="px-16 md:col-span-2 pt-32 text-white">
+				<h4 class="text-white font-extrabold text-left sm:text-4xl mb-11">
 					The open source platform designed for the future. Build enterprise.
 				</h4>
 				<h5 class="text-xl font-extrabold">
@@ -90,7 +101,7 @@
 					expertise consulting, on-site enterprise support, trainings, and private sessions.
 				</h5>
 				<button type="button"
-					class="px-4 py-4 bg-gradient-to-r mt-8 rounded-full font-extrabold from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 ...">
+					class="hidden md:block px-4 py-4 bg-gradient-to-r mt-8 rounded-full font-extrabold from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 ...">
 					learn more about support offerings
 				</button>
 
@@ -114,13 +125,13 @@
 		<div class="h-[36rem] mx-20 rounded bg-zinc-900 pb-4"></div>
 	</section>
 	<section>
-		<div class="grid grid-cols-3 px-32 py-16 bg-slate-200">
+		<div class="block md:grid grid-cols-3  px-8 md:32 py-16 bg-slate-200">
 			<div class="col-span-2">
 				<h1 class="font-bold text-lg capitalize">Join our Newsletter</h1>
-				<p class="text-[#7b7b7b]">Subscribe to stay up to date with the latest Nest updates, features, and
+				<p class="text-[#7b7b7b]  ">Subscribe to stay up to date with the latest Nest updates, features, and
 					videos!</p>
 			</div>
-			<div class="col-span-1">
+			<div class="col-span-1 pt-4">
 				<input type="text"
 					class="focus:outline-none focus:border-none w-64 px-4 py-3.5 bg-white rounded-tl-md rounded-bl-md text-sm m-0"
 					placeholder="Email address...">
@@ -138,5 +149,7 @@
 				class="text-[#ea2845]">Netlify</span></p>
 		<p class="text-[#ea2845]">中文说明</p>
 	</section>
+	<script src="index.js"></script>
+</body>
 
 </html>
